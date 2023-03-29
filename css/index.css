@@ -27,10 +27,11 @@ img {
     background-color: #2e3440;
     /* Create a single center column */
     display: flex;
-    max-width: 50%;
+
     flex-wrap: wrap;
     justify-content: center;
     /* align-items: center; */
+
     /*borders*/
     border: 1px solid #D8DEE9;
     padding: 10px;
@@ -52,4 +53,25 @@ img {
     justify-content: center;
     padding-left: 3%;
     padding-right: 3%;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (min-width: 915px) {
+    .contentWrapper {
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 915px) and (min-width: 1500px) {
+    .contentWrapper {
+        max-width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .contentWrapper {
+        max-width: 100%;
+    }
 }
